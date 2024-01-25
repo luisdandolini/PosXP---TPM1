@@ -26,7 +26,6 @@ document.addEventListener('DOMContentLoaded', function () {
       let productHTML = productItem(product);
       productsContainer.innerHTML += productHTML;
 
-      // Cria uma Promise para carregar cada imagem
       let imgPromise = new Promise(resolve => {
         let img = new Image();
         img.onload = resolve;
